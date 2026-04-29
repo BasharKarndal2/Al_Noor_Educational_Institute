@@ -11,7 +11,7 @@
 @include('admin.Section.edite')
    <div class="container-fluid py-4">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2 class="page-title mb-0"><i class="fas fa-school me-2"></i>إدارة الصفوف</h2>
+                    <h2 class="page-title mb-0"><i class="fas fa-school me-2"></i>إدارة الشعب</h2>
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSectionModal" id="addSectionBtn">
                         <i class="fas fa-plus me-2"></i>إضافة شعبة جديدة
                     </button>

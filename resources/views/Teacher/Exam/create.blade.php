@@ -5,7 +5,6 @@
             {{-- Header --}}
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="addExamModalLabel">إضافة اختبار جديد</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             {{-- Body --}}
@@ -40,11 +39,10 @@
                             <label for="end_time" class="form-label">وقت الانتهاء</label>
                             <input type="time" class="form-control" id="end_time" name="end_time" required>
                         </div>
-                        {{-- مكان الاختبار --}}
+ {{-- مكان الاختبار --}}
                         <div class="col-md-6">
                             <x-input-field nameinput="loc" label="مكان الاختبار" type="text" id="add_loc" />
                         </div>
-
                         {{-- رفع الملف --}}
                         <div class="col-md-6">
                             <label for="exam_file" class="form-label">ملف الاختبار</label>
@@ -65,6 +63,7 @@
 
             {{-- Footer --}}
             <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
                 <button type="submit" form="addExamModalForm" class="btn btn-primary">
                     <i class="bi bi-save"></i> حفظ الاختبار
                 </button>

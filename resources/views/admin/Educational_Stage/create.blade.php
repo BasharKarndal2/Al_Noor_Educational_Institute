@@ -5,7 +5,7 @@
                 <h5 class="modal-title" id="addEducational_StageModalLabel">
                     <i class="fas fa-user-plus me-2"></i>إضافة مرحلة دراسية
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             
             </div>
             <div class="modal-body text-right">
                 <form id="addEducational_StageModalform" method="POST" action="{{ route('educational_stage.store') }}">

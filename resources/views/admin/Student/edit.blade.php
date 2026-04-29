@@ -6,7 +6,7 @@
       <!-- Header -->
       <div class="modal-header bg-warning text-dark">
         <h5 class="modal-title" id="editStudentModalLabel"><i class="fas fa-user-edit me-2"></i> تعديل بيانات الطالب</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       
       </div>
 
       <!-- Body -->

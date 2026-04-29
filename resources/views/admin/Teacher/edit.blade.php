@@ -5,7 +5,7 @@
             <!-- Header -->
             <div class="modal-header bg-warning text-dark">
                 <h5 class="modal-title" id="editTeacherModalLabel"><i class="fas fa-user-edit me-2"></i> تعديل بيانات المعلم</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
             </div>
 
             <!-- Body -->

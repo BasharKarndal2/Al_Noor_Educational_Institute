@@ -3,7 +3,6 @@
         <div class="modal-content">
             <div class="modal-header bg-warning">
                 <h5 class="modal-title" id="editAttendanceModalLabel">تعديل سجل الحضور</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
             </div>
             <div class="modal-body">
                 <form id="editAttendanceModalForm" method="POST">
@@ -169,7 +168,7 @@ function loadStudentsedit(results = []) {
                             <select class="form-select" name="students[${student.id}][status]">
                                 <option value="present" ${status === 'present' ? 'selected' : ''}>حاضر</option>
                                 <option value="absent" ${status === 'absent' ? 'selected' : ''}>غائب</option>
-                                <option value="late" ${status === 'late' ? 'selected' : ''}>إذن</option>
+                                <option value="late" ${status === 'late' ? 'selected' : ''}>متأخر</option>
                             </select>
                         </td>
                         <td>

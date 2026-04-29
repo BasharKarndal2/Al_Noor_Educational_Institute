@@ -122,9 +122,9 @@
     @endif
 </td>
                                     <td>
-                                        <button class="btn btn-sm btn-primary viewAssignmentBtn" data-id="{{ $assignment->id }}">
-    <i class="fas fa-eye"></i>
-</button>
+<!--                                        <button class="btn btn-sm btn-primary viewAssignmentBtn" data-id="{{ $assignment->id }}">-->
+<!--    <i class="fas fa-eye"></i>-->
+<!--</button>-->
                                         <button class="btn btn-sm btn-warning editAssignmentBtn"  data-id="{{ $assignment->id }}" data-bs-toggle="modal" data-bs-target="#editAssignmentModal"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-sm btn-outline-danger"
         data-bs-toggle="modal"

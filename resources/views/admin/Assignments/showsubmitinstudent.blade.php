@@ -5,7 +5,6 @@
                 <h5 class="modal-title" id="viewSubmissionsModalLabel">
                     <i class="fas fa-users me-2"></i>الطلاب الذين سلموا الواجب
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="table-responsive">

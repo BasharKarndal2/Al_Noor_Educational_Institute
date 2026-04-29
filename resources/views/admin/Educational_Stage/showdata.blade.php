@@ -6,7 +6,7 @@
         <h5 class="modal-title" id="viewviewEduModalLabel">
           <i class="fas fa-users ms-2"></i> بيانات المرحلة الدراسية
         </h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        <!--<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>-->
       </div>
 
       <div class="modal-body">

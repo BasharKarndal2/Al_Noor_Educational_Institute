@@ -79,7 +79,7 @@
                                       
 
                                              @foreach ($Evaluations as $Evaluation )
-
+                                                <tr>
                                              <td> {{ $Evaluation->id }}</td>
                                              <td>{{ $Evaluation->title }}</td>
                                                   <td>{{ $Evaluation->section->classroom->name }}</td>
@@ -111,10 +111,11 @@
 </button>
     
 </td>
+ </tr>
    
                                              @endforeach
-                                        <tr>
-                                        </tr>
+                                       
+                                       
                                     </tbody>
                                 </table>
                             </div>

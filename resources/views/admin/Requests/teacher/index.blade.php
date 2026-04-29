@@ -113,11 +113,11 @@
                     
                     <div class="col-md-6 mb-3">
                         <label for="teacherEmail" class="form-label">البريد الإلكتروني</label>
-                        <input type="email" name="email" class="form-control" id="teacherEmail">
+                        <input type="email" name="email" class="form-control" id="teacherEmail" required>
                     </div>
                      <div class="col-md-6 mb-3">
                         <label for="teacherPassword" class="form-label">كلمة المرور </label>
-                        <input type="password" name="password" class="form-control" id="teacherPassword">
+                        <input type="password" name="password" class="form-control" id="teacherPassword" required>
                     </div>
                 </div>
                 
@@ -140,7 +140,7 @@
                 
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="teacherAgreement" required>
-                    <label class="form-check-label" for="teacherAgreement">أوافق على شروط وسياسات المجمع</label>
+                    <label class="form-check-label" for="teacherAgreement">أوافق على شروط وسياسات المعهد</label>
                 </div>
                 
                 <div class="d-flex justify-content-end mt-4">
@@ -260,6 +260,16 @@ $(document).ready(function() {
             return;
         }
 
+        if (email.length === 0) {
+             Swal.fire({
+                icon: 'error',
+                title: 'البريد الإلكتروني',
+                text: 'البريد الإلكتروني لا يمكن أن يكون فارغاً',
+                confirmButtonText: 'حسناً'
+            });
+            return false;
+        }
+
         // تحقق البريد الإلكتروني (إن وُجد)
         if(email.length > 0) {
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -282,13 +292,22 @@ $(document).ready(function() {
     }
 
 
-
+if (password.length == 0) {
+     Swal.fire({
+            icon: 'error',
+            title: 'كلمة المرور',
+            text: 'كلمة المرور لا يمكن أن تكون فارغة',
+            confirmButtonText: 'حسناً'
+        });
+        return false;
+}
         
         // تحقق كلمة المرور (إن وُجد)
-        if(password.length > 0 && password.length <= 8) {
+        if(password.length > 0 && password.length <= 8  ) {
             Swal.fire('خطأ', 'كلمة المرور يجب أن تكون أكثر من 8 أحرف', 'error');
             return;
         }
+
 
         // تحقق رقم الهاتف (أكثر من 9 أرقام)
         const phoneDigits = phone.replace(/\D/g, '');

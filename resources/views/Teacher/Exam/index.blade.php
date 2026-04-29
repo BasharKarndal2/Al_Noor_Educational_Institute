@@ -73,18 +73,18 @@
     
     <!-- إحصائيات -->
     <div class="row g-4 mb-4">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="stat-card bg-primary text-white">
-                <div class="stat-icon"><i class="fas fa-calendar-day"></i></div>
+                <div class="stat-icon me-2"><i class="fas fa-calendar-day"></i></div>
                 <div class="stat-info">
                     <h3>{{ $upcomingExams->count() }}</h3>
                     <p>اختبارات قادمة</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="stat-card bg-success text-white">
-                <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="stat-icon me-2"><i class="fas fa-check-circle"></i></div>
                 <div class="stat-info">
                     <h3>{{ $completedExams->count() }}</h3>
                     <p>اختبارات مكتملة</p>
@@ -127,7 +127,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($upcomingExams as $exam)
+                                @foreach($upcomingExams as $exam)
                                     <tr>
                                         <td>{{ $exam->exam_date }}</td>
                                         <td>{{ $exam->section->name }}:{{ $exam->section->classroom->name }} </td>
@@ -153,9 +153,7 @@
     @endif
 </td>
                                         <td>
-                                            <button class="btn btn-sm btn-outline-primary">
-                                                <i class="fas fa-info-circle me-1"></i>تفاصيل
-                                            </button>
+                                           
                                         <button class="btn btn-sm btn-warning editExamteacherBtn"  data-id="{{ $exam->id }}" data-bs-toggle="modal" data-bs-target="#editExamModal"><i class="fas fa-edit"></i></button>
 
                               <button class="btn btn-sm btn-outline-danger"
@@ -168,9 +166,7 @@
 
                                         </td>
                                     </tr>
-                                @empty
-                                    <tr><td colspan="6">لا يوجد اختبارات قادمة ✅</td></tr>
-                                @endforelse
+                                  @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -195,7 +191,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($completedExams as $exam)
+                                @foreach($completedExams as $exam)
                                    
                                     <tr>
                                         <td>{{ $exam->exam_date }}</td>
@@ -217,9 +213,7 @@
     @endif
 </td>
                                     </tr>
-                                @empty
-                                    <tr><td colspan="6">لا يوجد اختبارات مكتملة 📚</td></tr>
-                                @endforelse
+                                 @endforeach
                             </tbody>
                         </table>
                     </div>

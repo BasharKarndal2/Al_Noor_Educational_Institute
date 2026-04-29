@@ -4,7 +4,6 @@
             {{-- Header --}}
             <div class="modal-header bg-warning text-white">
                 <h5 class="modal-title" id="editExamLabel">تعديل الاختبار</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
 
             {{-- Body --}}

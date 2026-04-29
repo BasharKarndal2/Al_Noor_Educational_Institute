@@ -4,7 +4,7 @@
             {{-- Header --}}
             <div class="modal-header bg-warning text-white">
                 <h5 class="modal-title" id="addAssignmentModal">اضافة واجب </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <!--<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>-->
             </div>
 
             {{-- Body --}}
@@ -33,10 +33,10 @@
                             <input type="datetime-local" class="form-control" id="add_due_date" name="due_date" required>
                         </div>
 
-                        {{-- الحالة --}}
-                        <div class="col-md-6">
-                            <x-status id="edit_status" />
-                        </div>
+                        <!--{{-- الحالة --}}-->
+                        <!--<div class="col-md-6">-->
+                        <!--    <x-status id="edit_status" />-->
+                        <!--</div>-->
 
                         {{-- رفع الملف --}}
                         <div class="col-md-6">

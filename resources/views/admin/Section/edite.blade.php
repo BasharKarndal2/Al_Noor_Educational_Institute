@@ -6,7 +6,7 @@
                 <h5 class="modal-title" id="editSectionModalLabel">
                     <i class="fas fa-edit me-2"></i> تعديل بيانات المرحلة الدراسية
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+               
             </div>
             <!-- Body -->
             <div class="modal-body">

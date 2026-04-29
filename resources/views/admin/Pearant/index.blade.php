@@ -57,8 +57,13 @@
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h5>قائمة أولياء الأمور</h5>
                                     <div>
-                                        <button class="btn btn-outline-primary btn-sm"><i class="fas fa-file-export"></i> تصدير</button>
-                                        <button class="btn btn-outline-primary btn-sm"><i class="fas fa-print"></i> طباعة</button>
+                                        <button id="exportExcel"
+        class="btn btn-success btn-sm mb-2"
+        data-table-id="pearent_table432"
+        data-filename="بيانات  أولياء الأمور  ">
+  <i class="fas fa-file-excel"></i> تصدير Excel
+</button>
+                                       
                                     </div>
                                 </div>
                                 <div class="table-responsive">
@@ -66,6 +71,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
+                                                  <th>الصورة</th>
                                                 <th>اسم ولي الأمر</th>
                                                 <th>الطالب المرتبط</th>
                                                 <th>رقم الهاتف</th>
@@ -78,6 +84,13 @@
                                             @forelse ($pearants as $pearant )
                                                       <tr>
                                                 <td>{{ $pearant->id }}</td>
+                                                
+                                                   <td>
+                                        <img src="{{ asset('storage/' . $pearant->image_path) }}"
+                                             alt="صورة الطالب"
+                                             class="teacher-photo me-2 protected-data"
+                                             style="width: 40px; height: 40px; border-radius: 50%;">
+                                    </td>
                                                 <td>{{ $pearant->name }} </td>
                                                 <td>
     @forelse ($pearant->students as $student)

@@ -73,7 +73,7 @@
 
                     <!-- الصفوف الأخيرة -->
                     <div class="row g-4">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="card shadow-sm">
                                 <div class="card-header bg-primary text-white">
                                     <h5 class="mb-0"><i class="fas fa-users me-2"></i>أحدث الطلاب المسجلين</h5>
@@ -110,47 +110,47 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card shadow-sm">
-                                <div class="card-header bg-success text-white">
-                                    <h5 class="mb-0"><i class="fas fa-bell me-2"></i>آخر الإشعارات</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="notifications-list">
-                                        <div class="notification-item unread">
-                                            <div class="notification-icon text-danger">
-                                                <i class="fas fa-exclamation-circle"></i>
-                                            </div>
-                                            <div class="notification-content">
-                                                <h6>طلب جديد لتغيير مادة</h6>
-                                                <p>من الطالب أحمد محمد - الصف العاشر أ</p>
-                                                <small>منذ ساعتين</small>
-                                            </div>
-                                        </div>
-                                        <div class="notification-item">
-                                            <div class="notification-icon text-success">
-                                                <i class="fas fa-check-circle"></i>
-                                            </div>
-                                            <div class="notification-content">
-                                                <h6>تمت الموافقة على طلب إجازة</h6>
-                                                <p>للمعلم يوسف خالد</p>
-                                                <small>منذ يوم</small>
-                                            </div>
-                                        </div>
-                                        <div class="notification-item">
-                                            <div class="notification-icon text-primary">
-                                                <i class="fas fa-info-circle"></i>
-                                            </div>
-                                            <div class="notification-content">
-                                                <h6>اجتماع هيئة التدريس</h6>
-                                                <p>يوم الخميس القادم الساعة 10 صباحاً</p>
-                                                <small>منذ 3 أيام</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="col-lg-6">-->
+                        <!--    <div class="card shadow-sm">-->
+                        <!--        <div class="card-header bg-success text-white">-->
+                        <!--            <h5 class="mb-0"><i class="fas fa-bell me-2"></i>آخر الإشعارات</h5>-->
+                        <!--        </div>-->
+                        <!--        <div class="card-body">-->
+                        <!--            <div class="notifications-list">-->
+                        <!--                <div class="notification-item unread">-->
+                        <!--                    <div class="notification-icon text-danger">-->
+                        <!--                        <i class="fas fa-exclamation-circle"></i>-->
+                        <!--                    </div>-->
+                        <!--                    <div class="notification-content">-->
+                        <!--                        <h6>طلب جديد لتغيير مادة</h6>-->
+                        <!--                        <p>من الطالب أحمد محمد - الصف العاشر أ</p>-->
+                        <!--                        <small>منذ ساعتين</small>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+                        <!--                <div class="notification-item">-->
+                        <!--                    <div class="notification-icon text-success">-->
+                        <!--                        <i class="fas fa-check-circle"></i>-->
+                        <!--                    </div>-->
+                        <!--                    <div class="notification-content">-->
+                        <!--                        <h6>تمت الموافقة على طلب إجازة</h6>-->
+                        <!--                        <p>للمعلم يوسف خالد</p>-->
+                        <!--                        <small>منذ يوم</small>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+                        <!--                <div class="notification-item">-->
+                        <!--                    <div class="notification-icon text-primary">-->
+                        <!--                        <i class="fas fa-info-circle"></i>-->
+                        <!--                    </div>-->
+                        <!--                    <div class="notification-content">-->
+                        <!--                        <h6>اجتماع هيئة التدريس</h6>-->
+                        <!--                        <p>يوم الخميس القادم الساعة 10 صباحاً</p>-->
+                        <!--                        <small>منذ 3 أيام</small>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+                        <!--            </div>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                     </div>
                 </div>
 @endsection

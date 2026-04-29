@@ -3,7 +3,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title" id="addSectionModalLabel"><i class="fas fa-plus me-2"></i>إضافة شعبة  جديدة</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                   
                 </div>
                 <div class="modal-body">
                     <form id="addSectionForm" method="POST" action="{{ route('section.store') }}">

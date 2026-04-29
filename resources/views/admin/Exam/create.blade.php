@@ -5,7 +5,6 @@
             {{-- Header --}}
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="addExamModalLabel">إضافة اختبار جديد</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             {{-- Body --}}
@@ -79,6 +78,7 @@
 
             {{-- Footer --}}
             <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
                 <button type="submit" form="addExamModalForm" class="btn btn-primary">
                     <i class="bi bi-save"></i> حفظ الاختبار
                 </button>

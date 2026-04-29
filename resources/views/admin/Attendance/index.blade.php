@@ -5,12 +5,43 @@
 <x-alert type="success" />
 <x-alert type="danger" />
 <x-alert type="info" />
+<style>
+    
+    .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* تحسين التمرير على الأجهزة المحمولة */
+}
 
- <div class="admin-content text-start" id="bbb">
+.table {
+    min-width: 800px; /* الحد الأدنى لعرض الجدول لضمان الحاجة إلى التمرير */
+    direction: rtl; /* دعم الاتجاه من اليمين إلى اليسار */
+}
+
+.table th, .table td {
+    white-space: nowrap; /* منع التفاف النص */
+    padding: 8px; /* هوامش مناسبة */
+}
+
+/* تنسيقات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 14px; /* تقليل حجم الخط */
+        padding: 6px; /* تقليل الهوامش */
+    }
+}
+
+@media (max-width: 576px) {
+    .table th, .table td {
+        font-size: 12px; /* تقليل حجم الخط أكثر */
+        padding: 4px; /* تقليل الهوامش أكثر */
+    }
+}
+</style>
+ <div class="admin-content " id="bbb">
             <h2 class="page-title">نظام الحضور والغياب</h2>
             <div class="d-flex justify-content-between mb-3">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAttendanceModal">تسجيل حضور جديد</button>
-                <button class="btn btn-success" onclick="saveChanges()">حفظ التغييرات</button>
+                <!--<button class="btn btn-success" onclick="saveChanges()">حفظ التغييرات</button>-->
             </div>
 {{-- @include('admin.Attendance.filters') --}}
 
@@ -19,7 +50,7 @@
                     <div class="stat-card bg-success text-white">
                         <span class="stat-icon"><i class="fas fa-check-circle"></i></span>
                         <div class="stat-info">
-                          <h3>{{ $presentPercent }}%</h3>
+                          <h3> الحضور :{{ $presentPercent }}%</h3>
 <p>{{ $present }} من {{ $totalStudents }} طالب</p>
                         </div>
                     </div>
@@ -29,7 +60,7 @@
                         <span class="stat-icon"><i class="fas fa-times-circle"></i></span>
                         <div class="stat-info">
                            
-<h3>{{ $absentPercent }}%</h3>
+<h3>الغياب :{{ $absentPercent }}%</h3>
 <p>{{ $absent }} من {{ $totalStudents }} طالب</p>
 
                         </div>
@@ -39,7 +70,7 @@
                     <div class="stat-card bg-warning text-white">
                         <span class="stat-icon"><i class="fas fa-clock"></i></span>
                         <div class="stat-info">
-                          <h3>{{ $latePercent }}%</h3>
+                          <h3>إذن :{{ $latePercent }}%</h3>
 <p>{{ $late }} من {{ $totalStudents }} طالب</p>
                         </div>
                     </div>
@@ -50,8 +81,8 @@
   <div class="table-responsive">
       
                 <div class="d-flex justify-content-between mb-3">
-                    <button class="btn btn-primary" onclick="printRecord()">طباعة</button>
-                    <button class="btn btn-warning" onclick="sendNotifications()">إرسال تنبيهات</button>
+                    <!--<button class="btn btn-primary" onclick="printRecord()">طباعة</button>-->
+                    <!--<button class="btn btn-warning" onclick="sendNotifications()">إرسال تنبيهات</button>-->
                 </div>
                 <table class="table table-bordered" id="Attendance_table">
                     <thead>

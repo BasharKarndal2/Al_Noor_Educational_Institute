@@ -5,7 +5,7 @@
                 <h5 class="modal-title" id="addEducational_StageModalLabel">
                     <i class="fas fa-user-plus me-2"></i>إضافة  اسئلة جديدة
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              
             </div>
             <div class="modal-body text-right">
                 <form id="addQuestionform" method="POST" action="{{ route('questins.store') }}">

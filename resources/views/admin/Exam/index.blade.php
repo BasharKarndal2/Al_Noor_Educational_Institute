@@ -75,7 +75,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($upcomingExams as $exam)
+                              @foreach($upcomingExams as $exam)
                                     <tr>
                                         <td>{{ $exam->exam_date }}</td>
                                         <td>{{ $exam->section->name }}:{{ $exam->section->classroom->name }} </td>
@@ -116,9 +116,7 @@
 
                                         </td>
                                     </tr>
-                                @empty
-                                    <tr><td colspan="6">لا يوجد اختبارات قادمة ✅</td></tr>
-                                @endforelse
+                                   @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -143,7 +141,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($completedExams as $exam)
+                                @ @foreach($completedExams as $exam)
                                    
                                     <tr>
                                         <td>{{ $exam->exam_date }}</td>
@@ -165,9 +163,7 @@
     @endif
 </td>
                                     </tr>
-                                @empty
-                                    <tr><td colspan="6">لا يوجد اختبارات مكتملة 📚</td></tr>
-                                @endforelse
+                                  @endforeach
                             </tbody>
                         </table>
                     </div>

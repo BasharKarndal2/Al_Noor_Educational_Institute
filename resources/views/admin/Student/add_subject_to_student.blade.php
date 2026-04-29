@@ -10,7 +10,6 @@
           <h5 class="modal-title" id="addSubjectToStudentModalLabel">
             <i class="fas fa-book me-2"></i>إضافة مادة إلى الطالب
           </h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
 

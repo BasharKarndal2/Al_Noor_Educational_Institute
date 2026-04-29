@@ -3,7 +3,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title" id="addSubjectModalLabel"><i class="fas fa-plus me-2"></i>إضافة مادة جديدة</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
                 </div>
                 <div class="modal-body">
                     <form id="addSubjectForm" method="POST" action="{{ route('subject.store') }}">

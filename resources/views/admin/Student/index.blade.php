@@ -122,12 +122,13 @@
 
                                     {{-- الإجراءات --}}
                                     <td class="action-btns">
-                                        <button class="btn btn-sm btn-outline-primary"
-                                                title="عرض"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#viewStudentModal">
-                                            <i class="fas fa-eye"></i>
-                                        </button>
+                                        <!--<button class="btn btn-sm btn-outline-primary"-->
+                                        <!--        title="عرض"-->
+                                        <!--         data-id="{{ $student->id }}"-->
+                                        <!--        data-bs-toggle="modal"-->
+                                        <!--        data-bs-target="#viewStudentModal">-->
+                                        <!--    <i class="fas fa-eye"></i>-->
+                                        <!--</button>-->
 
                                         <button class="btn btn-sm btn-outline-warning"
                                                 title="تعديل"

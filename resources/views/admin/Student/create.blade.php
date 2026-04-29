@@ -6,7 +6,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="addStudentModalLabel"><i class="fas fa-user-plus me-2"></i>إضافة طالب جديد</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                
             </div>
             <div class="modal-body">
                 <form id="addStudentForm" action="{{ route('student.store') }}" method="POST" enctype="multipart/form-data" class="row g-3 needs-validation" >
@@ -56,7 +56,7 @@
                             <label for="password" class="form-label required">كلمة المرور</label>
                             <div class="position-relative">
                                 <input type="password" class="form-control" id="passwordadd" name="password" required minlength="8">
-                                <i class="fas fa-eye-slash password-toggle" data-target="password"></i>
+                                
                                 <div class="invalid-feedback">كلمة المرور يجب أن تكون 8 أحرف على الأقل</div>
                             </div>
                         </div>

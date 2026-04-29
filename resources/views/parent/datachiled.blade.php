@@ -29,7 +29,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-                <button type="button" class="btn btn-outline-primary"><i class="fas fa-print"></i> طباعة بطاقة الطالب</button>
+                <!--<button type="button" class="btn btn-outline-primary"><i class="fas fa-print"></i> طباعة بطاقة الطالب</button>-->
             </div>
         </div>
     </div>

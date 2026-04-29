@@ -82,7 +82,7 @@
                                         data-id="{{ $announcement->id }}"
                                         data-title="{{ $announcement->titel }}"
                                         data-description="{{ $announcement->discridtion }}"
-                                        data-image="{{ asset('storage/' . $announcement->image_path) }}">
+                                        data-image="{{ asset('public/' . $announcement->image_path) }}">
                                     تعديل
                                 </button>
 

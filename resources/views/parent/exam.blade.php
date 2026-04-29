@@ -53,7 +53,7 @@
 
     <!-- إحصائيات -->
     <div class="row g-4 mb-4">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="stat-card bg-primary text-white">
                 <div class="stat-icon">
                     <i class="fas fa-calendar-day"></i>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="stat-card bg-success text-white">
                 <div class="stat-icon">
                     <i class="fas fa-check-circle"></i>
@@ -75,17 +75,17 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="stat-card bg-info text-white">
-                <div class="stat-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="stat-info">
-                    <h3>قيد التطوير</h3>
-                    <p>المعدل العام</p>
-                </div>
-            </div>
-        </div>
+        <!--<div class="col-md-4">-->
+        <!--    <div class="stat-card bg-info text-white">-->
+        <!--        <div class="stat-icon">-->
+        <!--            <i class="fas fa-chart-line"></i>-->
+        <!--        </div>-->
+        <!--        <div class="stat-info">-->
+        <!--            <h3>قيد التطوير</h3>-->
+        <!--            <p>المعدل العام</p>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
     </div>
 
     <!-- جدول الاختبارات -->

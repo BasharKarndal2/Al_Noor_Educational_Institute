@@ -80,23 +80,23 @@
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTimetableModal">
                         <i class="fas fa-plus me-2"></i>إضافة جدول جديد
                     </button>
-                    <div class="d-flex">
-                        <select class="form-select me-2" id="filterClass" style="width: 150px;">
-                            <option value="">كل الصفوف</option>
-                            <option>الصف الأول</option>
-                            <option>الصف الثاني</option>
-                            <option>الصف الثالث</option>
-                        </select>
-                        <select class="form-select me-2" id="filterSection" style="width: 150px;">
-                            <option value="">كل الشعب</option>
-                            <option>الشعبة أ</option>
-                            <option>الشعبة ب</option>
-                            <option>الشعبة ج</option>
-                        </select>
-                        <button class="btn btn-outline-secondary">
-                            <i class="fas fa-filter me-1"></i>تصفية
-                        </button>
-                    </div>
+                    <!--<div class="d-flex">-->
+                    <!--    <select class="form-select me-2" id="filterClass" style="width: 150px;">-->
+                    <!--        <option value="">كل الصفوف</option>-->
+                    <!--        <option>الصف الأول</option>-->
+                    <!--        <option>الصف الثاني</option>-->
+                    <!--        <option>الصف الثالث</option>-->
+                    <!--    </select>-->
+                    <!--    <select class="form-select me-2" id="filterSection" style="width: 150px;">-->
+                    <!--        <option value="">كل الشعب</option>-->
+                    <!--        <option>الشعبة أ</option>-->
+                    <!--        <option>الشعبة ب</option>-->
+                    <!--        <option>الشعبة ج</option>-->
+                    <!--    </select>-->
+                    <!--    <button class="btn btn-outline-secondary">-->
+                    <!--        <i class="fas fa-filter me-1"></i>تصفية-->
+                    <!--    </button>-->
+                    <!--</div>-->
                 </div>
 
                 <!-- عرض الجداول -->

@@ -1,5 +1,7 @@
 @extends('layout.teacher.dashboard')
 @section('conten')
+
+
 <style>
 
     .table-responsive {
@@ -57,7 +59,7 @@
 @endif
 
 @include('Teacher.Evaluation.create')
-  <div class="admin-content">
+
                  <h2 class="page-title"><i class="bi bi-clipboard-data"></i> تقييم الطلاب</h2>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -174,7 +176,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
 @include('admin.aleat_delet')
 @include('Teacher.Evaluation.show')
 

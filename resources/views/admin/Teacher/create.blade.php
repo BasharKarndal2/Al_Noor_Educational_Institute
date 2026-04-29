@@ -8,7 +8,7 @@
                 <h5 class="modal-title" id="addTeacherModalLabel">
                     <i class="fas fa-user-plus me-2"></i>إضافة معلم جديد
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                
             </div>
 
             <!-- جسم المودال -->
@@ -54,7 +54,7 @@
                             <label for="marital" class="form-label required">الحالة الإجتماعية</label>
                             <select class="form-select" id="marital" name="marital" required>
                                 <option value="">اختر...</option>
-                                <option value="single" {{ old('marital') == 'single' ? 'selected' : '' }}>أعذب</option>
+                                <option value="single" {{ old('marital') == 'single' ? 'selected' : '' }}>أعزب</option>
                                 <option value="married" {{ old('marital') == 'married' ? 'selected' : '' }}>متزوج</option>
                             </select>
                             <div class="invalid-feedback">يرجى اختيار الحالة</div>
@@ -115,7 +115,6 @@
                             <label for="password" class="form-label required">كلمة المرور</label>
                             <div class="position-relative">
                                 <input type="password" class="form-control" id="password" name="password" required minlength="8">
-                                <i class="fas fa-eye-slash password-toggle" data-target="password"></i>
                                 <div class="invalid-feedback">كلمة المرور يجب أن تكون 8 أحرف على الأقل</div>
                             </div>
                         </div>

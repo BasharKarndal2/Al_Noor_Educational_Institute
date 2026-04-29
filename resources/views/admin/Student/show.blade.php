@@ -61,7 +61,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
                 <button type="button" class="btn btn-primary">
-                    <i class="fas fa-print me-1"></i> طباعة البطاقة الطالب
+                    <!--<i class="fas fa-print me-1"></i> طباعة البطاقة الطالب-->
                 </button>
             </div>
         </div>

@@ -44,11 +44,11 @@
                 <thead>
                     <tr>
                         <th>اليوم</th>
-                        <th>الفترة</th>
+                        <th>االحصة</th>
                         <th>الوقت</th>
                         <th>المادة</th>
                         <th>المعلم</th>
-                        <th>القسم</th>
+                        <th>الشعبة</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -6,16 +6,16 @@
    @section('content')   
 @if(session('request_success'))
 <script>
-    Swal.fire({
-        title: '🎉 تسجيل الطلب ناجح!',
-        html: '<b>في حال تم قبول الطلب سوف يتم التواصل معك</b><br>سيتم تحويلك  الى  الصفحة الرئيسية خلال لحظات...',
-        icon: 'success',
-        timer: 7000,
-        showConfirmButton: false,
-        willClose: () => {
-            window.location.href = '{{ route('home') }}';
-        }
-    });
+Swal.fire({
+    title: '🎉 تسجيل الطلب ناجح!',
+    html: '<span style="color: red; font-weight: bold;">ترحب بكم إدارة نور الهدى يرجى مراجعة الإدارة لتأكيد الطلب</span><br><span style="color: black; font-weight: normal;">سيتم تحويلك الى الصفحة الرئيسية خلال لحظات...</span>',
+    icon: 'success',
+    timer: 10000,
+    showConfirmButton: false,
+    willClose: () => {
+        window.location.href = '{{ route('home') }}';
+    }
+});
 </script>
 @endif
 
@@ -233,7 +233,7 @@
                     <div class="mt-3 pt-3 border-top">
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="mb-0">المبلغ الإجمالي:</h5>
-                            <h4 class="mb-0 fw-bold text-success"><span id="totalAmount">0</span> ر.س</h4>
+                            <h4 class="mb-0 fw-bold text-success"><span id="totalAmount">0</span>ل.س</h4>
                         </div>
                     </div>
                 </div>
@@ -443,11 +443,11 @@ async function checkUnique(field, value) {
         }
 
         const phoneDigits = phone.replace(/\D/g, '');
-        if (phoneDigits.length < 11) {
+        if (phoneDigits.length < 9) {
             await Swal.fire({
                 icon: 'error',
                 title: 'رقم التواصل',
-                text: 'رقم التواصل يجب أن يحتوي على 11 أرقام على الأقل.',
+                text: 'رقم التواصل يجب أن يحتوي على 9 أرقام على الأقل.', 
                 confirmButtonText: 'حسناً'
             });
             return false;
@@ -543,11 +543,11 @@ if (address.length < 5) {
         }
 
         const phoneDigits = guardianPhone.replace(/\D/g, '');
-        if (phoneDigits.length < 11) {
+        if (phoneDigits.length < 9) {
             await Swal.fire({
                 icon: 'error',
                 title: 'رقم تواصل ولي الأمر',
-                text: 'رقم التواصل يجب أن يحتوي على 11 أرقام على الأقل.',
+                text: 'رقم التواصل يجب أن يحتوي على 9 أرقام على الأقل.',
                 confirmButtonText: 'حسناً'
             });
             return false;
@@ -737,7 +737,7 @@ if (address.length < 5) {
 
                     subjects.forEach(subject => {
                         const teachersOptions = subject.teachers.map(teacher =>
-                            `<option value="${teacher.id}">${teacher.name} - ${teacher.price} ر.س</option>`
+                            `<option value="${teacher.id}">${teacher.name} - ${teacher.price} ل.س</option>`
                         ).join('');
 
                         container.innerHTML += `
@@ -809,7 +809,7 @@ if (address.length < 5) {
                             <h6 class="mb-1">${subject.name}</h6>
                             <small class="text-muted">${subject.teacher}</small>
                         </div>
-                        <span class="badge bg-primary rounded-pill">${subject.price} ر.س</span>
+                        <span class="badge bg-primary rounded-pill">${subject.price} ل.س</span>
                     </li>
                 `;
             });

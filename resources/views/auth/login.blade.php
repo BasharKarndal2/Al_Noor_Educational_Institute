@@ -78,8 +78,9 @@
         
         .login-logo img {
             margin: -20px;
-            height: 200PX;
-            width: 200px;
+            height: 210PX;
+            width: 180px;
+            margin-bottom: 8px;
         }
         
         .login-title {
@@ -388,9 +389,10 @@
                         <i class="fas fa-home me-2"></i> العودة للصفحة الرئيسية
                     </a>
                 </form>
-                
-                <div class="login-footer">
-                    ليس لديك حساب؟ <a href="../index.html">سجل الآن</a> | جميع الحقوق محفوظة &copy; مجمع نور الهدى 2025
+                <div class="login-footer text-center mt-3">
+                    ليس لديك حساب؟ 
+                    <a href="{{ route('home') }}">سجل الآن</a> 
+                    | جميع الحقوق محفوظة &copy; مجمع نور الهدى 2025
                 </div>
             </div>
         </div>

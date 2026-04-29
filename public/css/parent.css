@@ -50,53 +50,6 @@
     margin-left: 8px;
 }
 
-
-
-.table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* تحسين التمرير على الأجهزة المحمولة */
-}
-
-.table {
-    min-width: 800px;
-    /* الحد الأدنى لعرض الجدول لضمان الحاجة إلى التمرير */
-    direction: rtl;
-    /* دعم الاتجاه من اليمين إلى اليسار */
-}
-
-.table th,
-.table td {
-    white-space: nowrap;
-    /* منع التفاف النص */
-    padding: 8px;
-    /* هوامش مناسبة */
-}
-
-/* تنسيقات للشاشات الصغيرة */
-@media (max-width: 768px) {
-
-    .table th,
-    .table td {
-        font-size: 14px;
-        /* تقليل حجم الخط */
-        padding: 6px;
-        /* تقليل الهوامش */
-    }
-}
-
-@media (max-width: 576px) {
-
-    .table th,
-    .table td {
-        font-size: 12px;
-        /* تقليل حجم الخط أكثر */
-        padding: 4px;
-        /* تقليل الهوامش أكثر */
-    }
-}
-
-
 .admin-content {
     flex: 1;
     padding: 20px;

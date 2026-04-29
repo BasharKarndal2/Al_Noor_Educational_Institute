@@ -3,7 +3,6 @@
         <div class="modal-content">
             <div class="modal-header bg-warning">
                 <h5 class="modal-title" id="editAttendanceModalLabel">تعديل سجل الحضور</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
             </div>
             <div class="modal-body">
                 <form id="editAttendanceModalForm" method="POST">

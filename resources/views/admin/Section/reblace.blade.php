@@ -6,7 +6,6 @@
                 <h5 class="modal-title" id="replaceTeacherModalLabel">
                     <i class="fas fa-exchange-alt me-2"></i> استبدال معلم
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
                 <form id="replaceTeacherForm">

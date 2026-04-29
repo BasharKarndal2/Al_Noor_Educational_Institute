@@ -55,12 +55,13 @@
                     <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                         <h5 class="mb-0">قائمة المعلمين</h5>
                         <div>
-                            <button class="btn btn-sm btn-light me-2" id="exportExcel">
-                                <i class="fas fa-file-excel me-1"></i> تصدير
-                            </button>
-                            <button class="btn btn-sm btn-light" id="printBtn">
-                                <i class="fas fa-print me-1"></i> طباعة
-                            </button>
+                             <button id="exportExcel"
+        class="btn btn-success btn-sm mb-2"
+        data-table-id="teachersTable"
+        data-filename="بيانات   المعلمين">
+  <i class="fas fa-file-excel"></i> تصدير Excel
+</button>
+                            
                         </div>
                     </div>
                     <div class="card-body">

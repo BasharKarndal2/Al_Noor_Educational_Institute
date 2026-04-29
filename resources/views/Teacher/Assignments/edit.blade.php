@@ -4,7 +4,7 @@
             {{-- Header --}}
             <div class="modal-header bg-warning text-white">
                 <h5 class="modal-title" id="editAssignmentLabel">تعديل الواجب</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <!--<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>-->
             </div>
 
             {{-- Body --}}
@@ -34,14 +34,14 @@
                         </div>
 
                         {{-- الحالة --}}
-                <div class="col-md-6">
-              <label for="edit_status" class="form-label required">الحالة</label>
-              <select class="form-select" id="edit_status" name="status" required>
-                <option value="active">نشط</option>
-                <option value="inactive">غير نشط</option>
-                <option value="on_leave">في إجازة</option>
-              </select>
-            </div>
+            <!--    <div class="col-md-6">-->
+            <!--  <label for="edit_status" class="form-label required">الحالة</label>-->
+            <!--  <select class="form-select" id="edit_status" name="status" required>-->
+            <!--    <option value="active">نشط</option>-->
+            <!--    <option value="inactive">غير نشط</option>-->
+            <!--    <option value="on_leave">معلق</option>-->
+            <!--  </select>-->
+            <!--</div>-->
 
                         {{-- رفع الملف --}}
                         <div class="col-md-6">

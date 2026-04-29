@@ -22,13 +22,8 @@
     <!-- 3. ملفات JS الخاصة بالمعلم -->
       <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
-<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 </head>
 
 <body class="admin-dashboard">
@@ -37,36 +32,118 @@
 
 
 
-    <style>
+<style>
 
-    .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* تحسين التمرير على الأجهزة المحمولة */
+/* الشعار + النص */
+.navbar-brand img {
+    height: 40px;
+    transition: all 0.3s ease;
+}
+.navbar-brand span {
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
 }
 
-.table {
-    min-width: 800px; /* الحد الأدنى لعرض الجدول لضمان الحاجة إلى التمرير */
-    direction: rtl; /* دعم الاتجاه من اليمين إلى اليسار */
+/* صورة المدرس */
+.teacher-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.table th, .table td {
-    white-space: nowrap; /* منع التفاف النص */
-    padding: 8px; /* هوامش مناسبة */
+#adminName {
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
-/* تنسيقات للشاشات الصغيرة */
-@media (max-width: 768px) {
-    .table th, .table td {
-        font-size: 14px; /* تقليل حجم الخط */
-        padding: 6px; /* تقليل الهوامش */
+/* شاشات أصغر من 992px (أجهزة التابلت) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+    .navbar-brand span {
+        font-size: 18px;
+    }
+    .teacher-photo {
+        width: 35px;
+        height: 35px;
+    }
+    #adminName {
+        font-size: 16px;
     }
 }
 
+/* شاشات أصغر من 768px (موبايل) */
+@media (max-width: 768px) {
+      .table th, .table td {
+        font-size: 14px;    
+        padding: 6px;   
+    }
+    .navbar-brand img {
+        height: 30px;
+    }
+    .navbar-brand span {
+        font-size: 18px;
+    }
+    .teacher-photo {
+        width: 30px;
+        height: 30px;
+    }
+    #adminName {
+        font-size: 14px;
+    }
+    .btn.btn-outline-light {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}
+
+/* شاشات أصغر من 576px (موبايل صغير جدًا) */
 @media (max-width: 576px) {
-    .table th, .table td {
-        font-size: 12px; /* تقليل حجم الخط أكثر */
-        padding: 4px; /* تقليل الهوامش أكثر */
-    }
+     .table th, .table td {
+        font-size: 12px;  
+        padding: 4px;    
+    }
+    .navbar-brand img {
+        height: 25px;
+    }
+    .navbar-brand span {
+        font-size: 16px;
+    }
+    .teacher-photo {
+        width: 25px;
+        height: 25px;
+    }
+    #adminName {
+        font-size: 12px;
+    }
+    .btn.btn-outline-light {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}
+
+
+    .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.table {
+    min-width: 800px; 
+    direction: rtl;
+}
+
+.table th, .table td {
+    white-space: nowrap; 
+    padding: 8px;
+}
+
+
+.navbar-brand span{
+    font-weight: bold;
 }
 </style>
 
@@ -88,11 +165,12 @@
     @endif
 
     <!-- شريط التنقل العلوي -->
-    <nav class="navbar navbar-expand-lg navbar-dark admin-navbar fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark admin-navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="dashboard.html">
-                <img src="{{ asset('images/Noor_Alhuda_logo.png') }}" alt="شعار المجمع" height="40">
-                <span class="d-none d-sm-inline">لوحة المعلم</span>
+            <a class="navbar-brand d-flex align-items-center" href="{{ route('teacher.dashboard') }}">
+                <img src="{{ asset('images/Noor_Alhuda_logo.png') }}" 
+                     alt="شعار المجمع" height="40" class="ms-2">
+                <span class="m-2">لوحة المعلم</span>
             </a>
             
             <div class="d-flex align-items-center">
@@ -103,11 +181,11 @@
                         <img src="{{ asset('storage/' .$authUser->teacher->image_path) }}" alt="" class="teacher-photo me-2 protected-data" style="width: 40px; height: 40px; border-radius: 50%;">
                         {{-- <i class="fas fa-user-circle me-1"> </i> --}}
                         
-                            <span id="adminName">{{ $authUser->name }} أ.</span>
+                            <span id="adminName">أ.{{ $authUser->name }}</span>
                         @endif
                     </button>
                     <ul class="dropdown-menu dropdown-menu-start">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
+                        <!--<li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>-->
                       
                         <li><hr class="dropdown-divider"></li>
                         <form method="POST" action="{{ route('logout') }}">

@@ -51,8 +51,8 @@
     </div>
 
     <!-- إحصائيات التقييمات -->
-    <div class="row g-4 mb-4">
-        <div class="col-md-4">
+    <div class="row g-4 mb-6 mb-4">
+        <div class="col-md-6">
             <div class="stat-card bg-primary text-white">
                 <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
                 <div class="stat-info">
@@ -61,24 +61,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="stat-card bg-success text-white">
                 <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
                 <div class="stat-info">
                     <h3 id="averageGrade">0</h3>
-                    <p>المعدل العام</p>
+                    <p>المعدل العام ( للتقييمات )</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="stat-card bg-warning text-dark">
-                <div class="stat-icon"><i class="fas fa-tasks"></i></div>
-                <div class="stat-info">
-                    <h3 id="pendingEvaluations">0</h3>
-                    <p>التقييمات غير المكتملة</p>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <!-- جدول التقييمات -->

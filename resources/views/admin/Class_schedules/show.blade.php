@@ -14,9 +14,9 @@
 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fas fa-print me-1"></i>طباعة الجدول
-                    </button>
+                    <!--<button type="button" class="btn btn-primary">-->
+                    <!--    <i class="fas fa-print me-1"></i>طباعة الجدول-->
+                    <!--</button>-->
                 </div>
             </div>
         </div>

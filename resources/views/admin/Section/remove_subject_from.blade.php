@@ -7,7 +7,6 @@
         <h5 class="modal-title" id="manageSubjectsModalLabel">
           <i class="fas fa-book me-2"></i> إدارة مواد الشعبة
         </h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       
       <div class="modal-body">

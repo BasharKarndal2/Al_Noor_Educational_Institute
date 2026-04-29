@@ -70,9 +70,9 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-                <button type="button" class="btn btn-primary">
-                    <i class="fas fa-print me-1"></i> طباعة بطاقة المعلم
-                </button>
+                <!--<button type="button" class="btn btn-primary">-->
+                <!--    <i class="fas fa-print me-1"></i> طباعة بطاقة المعلم-->
+                <!--</button>-->
             </div>
         </div>
     </div>

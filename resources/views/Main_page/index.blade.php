@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+     <link rel="icon" type="image/png" href="{{ asset('images/Noor_Alhuda_logo.png') }}">
     <title>مجمع نور الهدى التعليمي - تعليم حديث</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -679,9 +679,9 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-outline-primary">عرض جميع المرافق</a>
-            </div>
+            <!--<div class="text-center mt-4">-->
+                <!--<a href="#" class="btn btn-outline-primary">عرض جميع المرافق</a>-->
+            <!--</div>-->
         </div>
     </section>
 

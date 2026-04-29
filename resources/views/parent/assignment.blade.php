@@ -55,7 +55,7 @@
     <!-- إحصائيات الواجبات -->
     <div class="row g-4 mb-4">
         <div class="col-md-4">
-            <div class="stat-card bg-primary">
+            <div class="stat-card bg-primary text-white">
                 <div class="stat-icon"><i class="fas fa-tasks"></i></div>
                 <div class="stat-info">
                     <h3 id="newAssignments">0</h3>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="stat-card bg-warning">
+            <div class="stat-card bg-warning text-white">
                 <div class="stat-icon"><i class="fas fa-clock"></i></div>
                 <div class="stat-info">
                     <h3 id="nearDueAssignments">0</h3>
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="stat-card bg-success">
+            <div class="stat-card bg-success text-white">
                 <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
                 <div class="stat-info">
                     <h3 id="completedAssignments">0</h3>
